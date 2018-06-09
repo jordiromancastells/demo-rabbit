@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  rabbit-server:
+    build:
+      context: rabbit-server
+    image: registry.gitlab.com/jordirc-demos/rabbit
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "patata"
+      RABBITMQ_DEFAULT_USER: "jordi"
+      RABBITMQ_DEFAULT_PASS: "jordi"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - "15672:15672" # admin-page
+      - "5672:5672"
+    labels:
+      NAME: "rabbit-server"
