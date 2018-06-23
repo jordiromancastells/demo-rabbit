@@ -37,7 +37,7 @@ http://localhost:15672/
 * usuario: jordi
 * password: jordi
 
-Estos datos estan definidos en el fichero **docker-compose.yml**
+Estos datos estan definidos en el fichero **docker-compose.yml**, siempre los puedes cambiar.
 
 ## Para acceder a la consola: **rabbitmqctl**
 
